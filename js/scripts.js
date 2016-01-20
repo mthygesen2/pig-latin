@@ -1,3 +1,9 @@
+// var wordCount = function(userInput) {
+//   var wordArray = userInput.split(" ");
+//   var numberOfWords = wordArray.length;
+//   return numberOfWords;
+// }
+
 var vowelCheck = function(userInput) {
   var firstLetter = userInput.slice(0, 1);
   if (firstLetter === "a" || firstLetter === "e" || firstLetter === "i" || firstLetter === "o" || firstLetter === "u") {
@@ -27,5 +33,38 @@ var consonantAppend = function(userInput) {
     var consonantOutput = userInput.substr(1) + firstLetter + "ay";
     return consonantOutput;
   }
-
 };
+
+var pigLatin = function(userInput) {
+  var result = "";
+  var wordArray = userInput.split(" ");
+  wordArray.forEach(function(word){
+    if (vowelCheck(word)) {
+      result += (vowelAppend(word) + " ");
+    } else {
+      result += (consonantAppend(word) + " ");
+    };
+  });
+  result = result.slice(0, -1);
+  return result;
+};
+
+
+// var pigLatinPrint = function(userInput) {
+//   var wordArray = [];
+//   var vowelOutput;
+//   var consonantOutput;
+//   wordCount(userInput) {
+//     var result = ""
+//     for (var index = 1; index <= wordArray.length; index +=1) {
+//       if (vowelCheck(wordArray[index])) {
+//         vowelAppend(wordArray[index]);
+//         result += vowelOutput + " ";
+//       } else {
+//         consonantAppend(wordArray[index]);
+//         result += consonantOutput + " ";
+//       };
+//     };
+//     return result;
+//   };
+// };
