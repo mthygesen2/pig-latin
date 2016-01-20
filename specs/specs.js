@@ -22,4 +22,10 @@ describe('consonantAppend', function(){
   it("is going to move the first consonant to the back and add ay", function(){
     expect(consonantAppend("hello")).to.equal("ellohay");
   });
+  it("is going to move all consonants to the back if string starts with two consonants and add ay", function () {
+    expect(consonantAppend("trick")).to.equal("icktray");
+  });
+  it("is going to move all consonants to the back if string starts with three consonants and add ay", function () {
+    expect(consonantAppend("through")).to.equal("oughthray");
+  });
 });
