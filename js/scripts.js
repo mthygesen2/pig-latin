@@ -42,3 +42,13 @@ var pigLatin = function(userInput) {
   result = result.slice(0, -1);
   return result;
 };
+
+$(document).ready(function() {
+  $("form#pig-latin").submit(function(event) {
+    var userInput = $("input#userInput").val();
+    var output = pigLatin(userInput);
+     $(".output").text(output);
+
+     event.preventDefault();
+  });
+});
