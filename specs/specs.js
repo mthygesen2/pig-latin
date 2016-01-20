@@ -28,4 +28,7 @@ describe('consonantAppend', function(){
   it("is going to move all consonants to the back if string starts with three consonants and add ay", function () {
     expect(consonantAppend("through")).to.equal("oughthray");
   });
+  it("is going to move both qu to the back and ay", function () {
+    expect(consonantAppend("quiet")).to.equal("ietquay");
+  });
 });
