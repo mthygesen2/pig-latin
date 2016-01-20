@@ -31,4 +31,10 @@ describe('consonantAppend', function(){
   it("is going to move both qu to the back and ay", function () {
     expect(consonantAppend("quiet")).to.equal("ietquay");
   });
+  it("is going to move qu along with other consonants in front of it to the back and add ay", function(){
+    expect(consonantAppend("squeal")).to.equal("ealsquay");
+  });
+  it("is going to treat y as a consonant", function() {
+    expect(consonantAppend("yellow")).to.equal("ellowyay")
+  });
 });
