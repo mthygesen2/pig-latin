@@ -6,3 +6,8 @@ var vowelCheck = function(userInput) {
     return false;
   }
 };
+
+var vowelAppend = function(userInput) {
+  var vowelOutput = userInput + "ay"
+  return vowelOutput;
+};

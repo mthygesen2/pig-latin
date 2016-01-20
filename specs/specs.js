@@ -11,3 +11,9 @@ describe('vowelCheck', function() {
     expect(vowelCheck("elephant")).to.equal(true);
   });
 });
+
+describe('vowelAppend', function(){
+  it("is going to add ay to end of word", function() {
+    expect(vowelAppend("elephant")).to.equal("elephantay");
+  });
+});
