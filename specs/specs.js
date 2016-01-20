@@ -17,3 +17,9 @@ describe('vowelAppend', function(){
     expect(vowelAppend("elephant")).to.equal("elephantay");
   });
 });
+
+describe('consonantAppend', function(){
+  it("is going to move the first consonant to the back and add ay", function(){
+    expect(consonantAppend("hello")).to.equal("ellohay");
+  });
+});
