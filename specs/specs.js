@@ -21,7 +21,7 @@ describe('pigLatin', function() {
     expect(pigLatin("yellow")).to.equal("ellowyay")
   });
   it("is going to take a string of multiple words and convert to pig latin", function() {
-    expect(pigLatin("Hello how are you doing today")).to.equal("elloHay owhay areay ouyay oingday odaytay")
+    expect(pigLatin("hello how are you doing today")).to.equal("ellohay owhay areay ouyay oingday odaytay")
   });
 });
 
