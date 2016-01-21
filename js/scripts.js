@@ -31,6 +31,7 @@ var consonantAppend = function(userInput) {
 var pigLatin = function(userInput) {
   var result = "";
   userInput = userInput.toLowerCase();
+  userInput = userInput.replace(/[&\/\\#,+()$~%.'!":*?<>{}]/g, '');
   var wordArray = userInput.split(" ");
   wordArray.forEach(function(word){
     if (vowelCheck(word)) {
