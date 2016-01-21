@@ -15,7 +15,7 @@ _This page will convert the text entered into the input box into pig latin. This
 
 ## Known Bugs
 
-_Punctuation will not be converted, so should not be used._
+_No known bugs._
 
 ## Support and contact details
 
