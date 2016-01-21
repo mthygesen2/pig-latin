@@ -43,6 +43,8 @@ var pigLatin = function(userInput) {
   return result;
 };
 
+//Looks like result.slice(0, -1) might be unnecessary since it should have the same value as result (a slice from 0 to -1 should just cover the entire string).
+
 $(document).ready(function() {
   $("form#pig-latin").submit(function(event) {
     var userInput = $("input#userInput").val();

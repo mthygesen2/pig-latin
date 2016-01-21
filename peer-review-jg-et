@@ -1,0 +1,3 @@
+Tests: Tests appear to all pass with flying colors on both spec runner and in the browser
+
+Logic: Business logic and interface logic are separated
